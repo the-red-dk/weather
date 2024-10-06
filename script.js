@@ -1,3 +1,5 @@
+requestAnimationFrame('dotenv').config();
+
 const inputBox = document.querySelector(".input-box");
 const searchBtn = document.getElementById("searchBtn");
 const weatherImg = document.querySelector(".weather-image");
@@ -12,7 +14,7 @@ const weatherBody = document.querySelector(".weather-body");
 
 
 async function checkWeather(city) {
-    const apiKey = "47d22b0265e7638da98ba6baed80f03b";
+    const apiKey = process.env.apiKey;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
     const weatherData = await fetch(`${url}`).then(response => 
