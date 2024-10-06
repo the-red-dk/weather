@@ -169,9 +169,11 @@ body {
         /* padding-bottom: 20px;
         margin-bottom: 15px; */
     }
-/* 
+
     body {
-        height: 99vh;
-    } */
+        height: 100%;
+        background-size:cover;
+        background-position: right;
+    }
 
 }
