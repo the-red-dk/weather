@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 
 // if (!process.env.API_KEY) {
 //     console.error("API_KEY is not set in the environment variables.");
@@ -19,7 +19,7 @@ const weatherBody = document.querySelector(".weather-body");
 
 
 async function checkWeather(city) {
-    const API_KEY = process.env.API_KEY;
+    const API_KEY = "47d22b0265e7638da98ba6baed80f03b";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
 
     const weatherData = await fetch(`${url}`).then(response => response.json());
