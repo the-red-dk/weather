@@ -7,7 +7,7 @@
 
 const inputBox = document.querySelector(".input-box");
 const searchBtn = document.getElementById("searchBtn");
-const weatherImg = document.querySelector(".weather-image");
+const weatherImg = document.getElementById("weatherImage");
 const temperature = document.querySelector(".temperature");
 const description = document.querySelector(".description");
 const humidity = document.getElementById("humidity");
@@ -34,6 +34,7 @@ async function checkWeather(city) {
         return;
     }
     else {
+        console.log("Setting image:", weatherImg.src);
         weatherBody.style.display = "flex";
         locationNotFound.style.display = "none";
 
@@ -50,7 +51,9 @@ async function checkWeather(city) {
     switch(weatherData.weather[0].main)
     {
         case 'Clouds':
-            weatherImg.src = "images/cloud2.png";
+            // weatherImg.src = "images/cloud2.png";
+            weatherImg.src = "images/cloud2.png"; // Replace with the actual path
+            console.log("Setting image:", weatherImg.src);
             break;
         case 'Clear':
             weatherImg.src = "images/clear.png";
@@ -64,6 +67,8 @@ async function checkWeather(city) {
         case 'Snow':
             weatherImg.src = "images/snow.png";
             break;
+        default:
+            console.log("Not found");
     }
 
     console.log(weatherData);
