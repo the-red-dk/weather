@@ -1,14 +1,23 @@
 @font-face {
     font-family: 'Gotham';
-    src: url('fonts/GothamBold.ttf') format('truetype'),
-     url('fonts/GothamBoldItalic.ttf') format('truetype'),
-     url("fonts/GothamBook.ttf") format('truetype'),
-     url("fonts/GothamBookItalic.ttf") format('truetype'),
-     url("fonts/GothamLight.ttf") format('truetype'),
-     url("fonts/GothamLightItalic.ttf") format('truetype'),
-     url("fonts/GothamMedium.ttf") format('truetype'),
-     url("fonts/GothamMedium_1.ttf") format('truetype'),
-     url("fonts/GothamMediumItalic.ttf") format('truetype');
+    src: url('fonts/GilamBlack.otf') format('truetype'),
+     url('fonts/GilamBlackItalic.otf') format('truetype'),
+     url("fonts/GilamBold.otf") format('truetype'),
+     url("fonts/GilamBoldItalic.otf") format('truetype'),
+     url("fonts/GilamBook.otf") format('truetype'),
+     url("fonts/GilamBookItalic.otf") format('truetype'),
+     url("fonts/GilamExtraLight.otf") format('truetype'),
+     url("fonts/GilamExtraLightItalic.otf") format('truetype'),
+     url("fonts/GilamHeavy.otf") format('truetype'),
+     url("fonts/GilamHeavyItalic.otf") format('truetype'),
+     url("fonts/GilamLight.otf") format('truetype'),
+     url("fonts/GilamLightItalic.otf") format('truetype'),
+     url("fonts/GilamRegular.otf") format('truetype'),
+     url("fonts/GilamRegularItalic.otf") format('truetype'),
+     url("fonts/GilamSemiBold.otf") format('truetype'),
+     url("fonts/GilamSemiBoldItalic.otf") format('truetype'),
+     url("fonts/GilamThin.otf") format('truetype'),
+     url("fonts/GilamThinItalic.otf") format('truetype');
     
     font-weight: normal;
     font-style: normal;
