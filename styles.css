@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/GothamBold.ttf') format('ttf');
+    src: url('fonts/GothamBoldItalic.ttf') format('ttf');
+    src: url("fonts/GothamBook.ttf") format('ttf');
+    src: url("fonts/GothamBookItalic.ttf") format('ttf');
+    src: url("fonts/GothamLight.ttf") format('ttf');
+    src: url("fonts/GothamLightItalic.ttf") format('ttf');
+    src: url("fonts/GothamMedium.ttf") format('ttf');
+    src: url("fonts/GothamMedium_1.ttf") format('ttf');
+    src: url("fonts/GothamMediumItalic.ttf") format('ttf');
+    
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Bold.woff2') format('woff2'),
+         url('fonts/Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -92,6 +116,7 @@ body {
     margin-block: 20px;
     color: white;
     margin: auto;
+    margin-bottom: 20px;
 }
 .weather-image {
     margin-top: 50px;

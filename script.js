@@ -19,7 +19,7 @@ const weatherBody = document.querySelector(".weather-body");
 
 
 async function checkWeather(city) {
-    const API_KEY = "47d22b0265e7638da98ba6baed80f03b";
+    const API_KEY = "47d22b02   65e7638da98ba6baed80f03b";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
 
     const weatherData = await fetch(`${url}`).then(response => response.json());
@@ -51,8 +51,7 @@ async function checkWeather(city) {
     switch(weatherData.weather[0].main)
     {
         case 'Clouds':
-            // weatherImg.src = "images/cloud2.png";
-            weatherImg.src = "images/cloud2.png"; // Replace with the actual path
+            weatherImg.src = "images/cloud2.png";
             console.log("Setting image:", weatherImg.src);
             break;
         case 'Clear':
